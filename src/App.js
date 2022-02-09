@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useReducer } from 'react';
+import { Component } from './components/Component';
+import { StoreContext } from './context/context';
+import { reducer, initialState } from './store/reducer';
 
-function App() {
+const App = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StoreContext.Provider value={{ count: state.count, dispatch }}>
+      <div className='state'>{state.count}</div>
+      <div className='wrapper'>
+        <Component title='A' />
+        <Component title='B' />
+        <Component title='C' />
+      </div>
+    </StoreContext.Provider >
   );
 }
 

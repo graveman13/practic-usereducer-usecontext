@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.block{
+  width: 200px;
+  background: green;
+  margin-right: 20px;
+  height: 100px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.btn{
+  height: 30px;
+  width: 60px;
+}
+.counter{
+  padding-top: 20px;
+}
+.counter span {
+  display: inline-block;
+  width: 40px;
+  flex-wrap: wrap;
+}
+.state{
+  background: greenyellow;
+  height: 40px;
+  width: 640px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  border-radius: 10px;
+}
