@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/practic-usereducer-usecontext/static/css/main.7b202565.css",
+    "main.js": "/practic-usereducer-usecontext/static/js/main.f4c7d13d.js",
+    "index.html": "/practic-usereducer-usecontext/index.html",
+    "main.7b202565.css.map": "/practic-usereducer-usecontext/static/css/main.7b202565.css.map",
+    "main.f4c7d13d.js.map": "/practic-usereducer-usecontext/static/js/main.f4c7d13d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b202565.css",
+    "static/js/main.f4c7d13d.js"
+  ]
+}
